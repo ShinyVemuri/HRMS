@@ -1,0 +1,13 @@
+<div class="d-flex flex-row ">
+    <%= render 'layouts/dashadmin'%>
+        <div class="d-flex flex-column">
+            <div class="c4">
+                <center>
+                <h1 class="admin-management-heading">Add New Employee </h1>
+                <%= render "remote_modal", title: "Add New Employee" do %>
+                <%= render "form", employee: @employee  %>
+                <% end %>
+                </center>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,50 @@
+<%= form_with model: @employee_detail do |f| %>
+  <div class="f-container">
+    <div>
+      <div class="field">
+        <%= f.label :contactno %><br />
+        <%= f.text_field :contact_no, autofocus: true, autocomplete: "contact_no" %>
+      </div>
+  
+      <div class="field">
+        <%= f.label :emergency_contact_number %><br />
+        <%= f.text_field :emergency_contact_number, autofocus: true, autocomplete: "emergency_contact_number" %>
+      </div><br>
+
+      <div class="field">
+        <%= f.label :designationid %><br />
+        <%= f.number_field :designation_id, autofocus: true, autocomplete: "designation_id" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :employeeid %><br />
+        <%= f.number_field :employee_id, autofocus: true, autocomplete: "employee_id" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :managerid %><br />
+        <%= f.number_field :manager_id, autofocus: true, autocomplete: "manager_id" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :bloodgroup %><br />
+        <%= f.text_field :blood_group, autofocus: true, autocomplete: "blood_group" %>
+      </div>
+  
+      <div class="field">
+        <%= f.label :projectid %><br />
+        <%= f.number_field :project_id, autofocus: true, autocomplete: "project_id" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :workexperience %><br />
+        <%= f.number_field :work_experience, autofocus: true, autocomplete: "work_experience" %>
+      </div>
+
+      <div class="actions admin-add-cancel-buttons-container">
+        <%= f.submit "Save",class: "btn btn-primary f-submit-buttons" %>
+        <%= link_to "Cancel", leave_types_path, class: "btn btn-danger", method: :get %>
+      </div>
+    </div>
+  </div>
+<% end %>

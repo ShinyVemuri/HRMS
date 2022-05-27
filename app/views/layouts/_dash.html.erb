@@ -1,0 +1,17 @@
+<div class="d-flex flex-row ">
+    <div class="d-flex flex-column">
+        <div>
+            <%= button_to "Dashboard", dash_path, class: "box", method: :get%>
+        </div>
+        <div>
+            
+            <%= button_to "Leaves", leave_path, class: "box", method: :get%>
+        </div>
+        <div>
+            <%= button_to "Attendance", attendance_path, class: "box", method: :get%>
+        </div>
+        <div>
+            <%= button_to "Settings", employee_details_path, class: "box", method: :get%>
+        </div>
+    </div>
+</div>

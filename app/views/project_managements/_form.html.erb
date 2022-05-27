@@ -1,0 +1,37 @@
+<center>
+<%= form_with model:@project_management do |f| %>
+    
+    <div class="field">
+        <%= f.label :project_name %><br />
+        <%= f.text_field :project_name, autofocus: true, autocomplete: "project_name" %>
+    </div>
+    <div class="field">
+        <%= f.label :client %><br />
+        <%= f.text_field :client, autofocus: true, autocomplete: "client" %>
+    </div>
+    <div class="field">
+        <%= f.label :managerId %><br />
+        <%= f.text_field :manager_id, autofocus: true, autocomplete: "manager_id" %>
+    </div>
+    <div class="field">
+        <%= f.label :description %><br />
+        <%= f.text_field :description, autofocus: true, autocomplete: "description" %>
+    </div>
+    <div class="field">
+        <%= f.label :clients_time_zone %><br />
+        <%= f.date_field :clients_time_zone, autofocus: true, autocomplete: "clients_time_zone" %>
+    </div>
+    <div class="field">
+        <%= f.label :shift_info %><br />
+        <%= f.text_field :shift_info, autofocus: true, autocomplete: "shift_info" %>
+    </div>
+    <div class="field">
+        <%= f.label :project_type %><br />
+        <%= f.text_field :project_type, autofocus: true, autocomplete: "project_type" %>
+    </div><br>
+    <div class="actions admin-add-cancel-buttons-container">
+        <%= f.submit "Add", class: "btn btn-primary" %>
+         <%= link_to "Cancel", project_managements_path, class: "btn btn-danger" %>
+    </div>
+<%end%>
+</center>

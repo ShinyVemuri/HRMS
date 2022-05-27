@@ -1,0 +1,45 @@
+<%= form_with model: @address do |f| %>
+  <div class="f-container">
+    <div>
+      <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_field :address, autofocus: true, autocomplete: "address" %>
+      </div>
+  
+      <div class="field">
+        <%= f.label :street %><br />
+        <%= f.text_field :street, autofocus: true, autocomplete: "street" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :city %><br />
+        <%= f.text_field :city, autofocus: true, autocomplete: "city" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :state %><br />
+        <%= f.text_field :state, autofocus: true, autocomplete: "state" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :pincode %><br />
+        <%= f.text_field :pincode, autofocus: true, autocomplete: "pincode" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :country %><br />
+        <%= f.text_field :country, autofocus: true, autocomplete: "country" %>
+      </div>
+  
+      <div class="field">
+        <%= f.label :employeeid %><br />
+        <%= f.number_field :employee_id, autofocus: true, autocomplete: "employee_id" %>
+      </div><br>
+
+      <div class="actions admin-add-cancel-buttons-container">
+        <%= f.submit "Save",class: "btn btn-primary f-submit-buttons" %>
+        <%= link_to "Cancel", leave_types_path, class: "btn btn-danger", method: :get %>
+      </div>
+    </div>
+  </div>
+<% end %>

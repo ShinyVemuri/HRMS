@@ -1,0 +1,19 @@
+<div class="index-main-container">
+    <% if current_employee %>
+    <div class="button-container">
+    <%= button_to 'Log Out', destroy_employee_session_path, method: :delete,:class=>"b1 btn btn-primary" %>
+    </div>
+    <%end%>
+    <body>
+        <h1>Inspiring Leadership Innovation.</h1><br>
+        <p>  Hire |  Train |  Retain</p>
+        <br>
+        <br/>
+        <h5>Whether we play a large or small role, by working together we can achieve our objectives. </h5>
+        <%= yield%>
+    </body>
+</div>
+
+
+
+    

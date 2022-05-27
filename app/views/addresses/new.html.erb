@@ -1,0 +1,9 @@
+<div class="d-flex flex-row ">
+    <%= render 'layouts/dash'%>
+    <div class="d-flex flex-column">
+        <h1 class="admin-management-heading">Add Address Details</h1>
+        <%= render "remote_modal", title: "New Address" do %>
+        <%= render "form", address: @address %>
+        <% end %>
+    </div>
+</div>

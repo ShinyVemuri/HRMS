@@ -1,0 +1,9 @@
+<div class="d-flex flex-row ">
+    <%= render 'layouts/dash'%>
+    <div class="d-flex flex-column">
+        <h1 class="admin-management-heading">Edit Employee Details</h1>
+        <%= render "remote_modal", title: "Edit Employee Details" do %>
+        <%= render "form", employee_detail: @employee_detail %>
+        <% end %>
+    </div>
+</div>

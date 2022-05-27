@@ -1,0 +1,20 @@
+<center>
+<div class="container">
+    <label> <b>Email</b></label> <br>
+
+    <input type="text" placeholder="Enter email" name="uname" required> <br>
+
+    <label for="psw"><b>Password</b></label> <br>
+
+    <input type="password" placeholder="Enter Password" name="psw" required>  <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label> <br>
+
+    <%=button_to 'Log in', root_path, method: :get,:class=>"b1" %> <br>
+
+    <%= button_to 'Cancel', root_path, method: :get,:class=>"b1" %> <br>
+
+    
+</div>
+</center>

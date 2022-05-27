@@ -1,0 +1,12 @@
+<div class="d-flex flex-row ">
+    <%= render 'layouts/dashadmin'%>
+        <div class="d-flex flex-column">
+            <div class="c4">
+            <center>
+            <h1 class="admin-management-heading">Edit Project</h1>
+            <%= render "remote_modal", title: "Edit Project" do %>
+            <%= render "form", project_management: @project_management %>
+            <% end %>
+            </center>
+        </div>
+</div>

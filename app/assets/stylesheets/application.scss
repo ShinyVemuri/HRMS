@@ -1,0 +1,344 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.index-main-container{
+
+  background-image: url(https://bebs.org/wp-content/uploads/2019/05/form-background-1024x683.jpg);
+  height: 150vh;
+  display: flex;
+  flex-direction :column;
+  justify-content:center;
+  align-items :center;
+  background-repeat :no-repeat;
+  background-size :cover;
+  color: #f2f2f2;
+  
+}
+  
+  
+  
+.index-sub-container{
+  
+  height: 100vh;
+  width: 50vw;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  justify-content:center;
+  display: flex;
+  flex-direction :column;
+}
+
+
+.logo {
+  height: 100vh;
+  width: 50vw;
+  background-color: white;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  flex-direction :column;
+  text-align: center;
+}
+
+.al{
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  flex-direction :column;
+  text-align: center;
+  background-color: #8d2323;
+
+}
+.d1{
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  flex-direction :column;
+  text-align: center;
+  margin-left: 27px;
+}
+  
+.box {
+  padding:15px;
+  align-items: left;
+  width: 170px;
+  height: 150px;
+  color: #ddd;
+  background-color: rgb(3, 65, 158);
+  text-align: center;
+  border-color:  rgb(3, 65, 158);
+
+}
+
+.bottom{
+  align-items: bottom;
+  background-color: #8d2323;
+}
+
+.button{
+  border-color:  rgb(3, 65, 158);
+}
+
+.page-footer {
+  background-color: white;
+  color: blue;
+  
+
+}
+
+.lo{
+  color: #f0f3f5;
+  background-color: #2571af;
+  border: #2571af;
+}
+
+.c1 {
+  width: 84vw;
+  height: 270px;
+  background-color: rgb(235, 247, 245);
+  margin-left: 20px;
+  text-align: center;
+
+}
+
+.attendace-heading {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 76px;
+}
+
+
+
+.t1{
+  background-color: #2571af;
+  color: #ddd;
+  text-align: center;
+  
+}
+
+.n1{
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.c2 {
+  width: 40vw;
+  height: 252px;
+  background-color: rgb(235, 247, 245);
+  margin-left: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.c3 {
+  width: 25vw;
+  height: 150px;
+  background-color: white;
+  margin-left: 20px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-size: medium;
+}
+
+.c4{
+  width: 90vw;
+  height: 400px;
+  background-color: white;
+  margin-left: 20px;
+  text-align: left;
+  align-items: center;
+  color: black;
+  font-size: medium;
+
+}
+.box3{
+  align-items: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.box2 {
+  align-items: center;
+}
+
+.h1{
+  align-items: row;
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+.a1{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  margin-left: 6px;
+  background-color: white;
+  width: 45vw;
+  height: 300px;
+  margin-right: 10px;
+}
+.s1 {
+  width: 25vw;
+  height: 120px;
+  background-color: white;
+  justify-content:center;
+}
+
+.s2 {
+  width: 25vw;
+  height: 120px;
+  background-color: white;
+  text-align: left;
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  flex-direction :column;
+}
+
+.e{
+  width: 25vw;
+  height: 80px;
+}
+  
+.b1{
+  
+  background-color: rgb(27, 63, 92);
+  border-radius: 12ch;
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+.custom-profile-button {
+  border: none;
+  background-color: transparent;
+  margin-right: 110px;
+}
+  
+.b2{
+  color:aqua;
+  background-color: blue;
+  border-radius: 0ch;
+}
+  
+.topnav {
+  background-color: rgb(248, 241, 241);
+  overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+  
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+  
+  /* Add a color to the active/current link */
+  
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  
+}
+
+.navbar{
+  background-color: rgb(248, 247, 247);
+  height: 65px;
+}
+  
+.dropdown-menu {
+  float: left;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.img {
+  vertical-align: middle;
+  width: 1px;
+  height: 11px;
+  border-radius: 10%;
+}
+
+.notice {
+  color: blue;
+}
+
+.alert {
+  color: blue;
+}
+
+.actions {
+  color: rgb(27, 63, 92);
+  
+}
+
+.form-control me-2 {
+  size: 15in;
+  box-sizing: content-box;
+}
+
+.bi bi-pen {
+  color: black;
+}
+
+.table{
+  border:1px solid black;
+  width: 94%;
+}
+
+.set{
+  background-color: rgb(198, 243, 243);
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 60px;
+  margin-top: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.form-control{
+  width: 94%;
+}
+

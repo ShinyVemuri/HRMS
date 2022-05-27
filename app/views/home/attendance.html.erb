@@ -1,0 +1,58 @@
+<div class="d-flex flex-row ">
+    <%= render 'layouts/dash'%>
+    <div class="d-flex flex-column">
+    <center>
+    <div class="a1">
+        <div class="d1">
+        <br>
+            <div class="box3">
+                <div class="c2">
+                <div class="t1"><h3>Attendance</h3></div><br>
+                <br>
+                <%= button_to "Logout", destroy_employee_session_path, class: "btn btn-primary", method: :delete%> 
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="d1">
+        <br>
+            <div class="box3">
+                <div class="c2">
+                <div class="t1"><h3>Last week details</h3></div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="a1">
+        <div class="d1">
+        <br>
+            <div class="box3">
+                <div class="c2">
+                <div class="t1"><h3>Pie Chart</h3></div>
+                <center>
+                <%= pie_chart [['Absent', 2],['Present',7]], height: "220px", width: "220px"%>
+                </center>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="d1">
+        <br>
+            <div class="box3">
+                <div class="c2">
+                <div class="t1"><h3>Some data</h3></div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    </center>
+    </div>
+</div>

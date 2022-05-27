@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="container-fluid">
+    <a class="" href="#">
+      <img src="https://zensark.com/zensark2/wp-content/uploads/2021/01/Asset-16.png" alt="" width="150" height="50">
+    </a>
+    <% if current_employee %>
+        <div class="dropdown">
+            <button class="custom-profile-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">  
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><%= button_to "Administration", administration_path, class: "dropdown-item", method: :get%></li>
+                <li><%= button_to "Manager", managers_index_path, class: "dropdown-item", method: :get%></li>
+                <li><%= button_to "Logout", destroy_employee_session_path, class: "dropdown-item", method: :delete%></li>
+            </ul>
+        </div>
+    <%else%>
+        <% if request.path.include? "sign_in"%>
+        <%= button_to "Home", root_path, class: "b1", method: :get %>
+        <%else%>
+        <%= button_to "Sign In", new_employee_session_path, class: "b1", method: :get %>
+        <%end%>
+    <%end%>
+  </div>
+</nav>
